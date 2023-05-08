@@ -1,7 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
+
+import { withProviders } from "./providers";
+import { Routing } from "pages";
 
 const App: React.FC = (): JSX.Element => {
-  return <Fragment />
+  return <Routing />
 };
 
-export { App };
+export default withProviders(App);
